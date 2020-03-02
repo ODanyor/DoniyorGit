@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
-import { Context } from "../../context";
+import React from "react";
 import { StyledBackground } from "../../static/StyledComponents";
 
-const Background = () => {
-  const [data, setData] = useContext(Context);
+const Background = ({ context }) => {
+  const [data, setData] = context;
   const toggle = () => {
     setData(prevState => ({
       ...prevState,

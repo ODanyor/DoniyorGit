@@ -1,0 +1,15 @@
+.contacts-container {
+  position: absolute;
+  padding: 25px;
+  max-width: 750px;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contacts-container-darkMode {
+  color: #aaa;
+}
+.contacts-container-darkMode input {
+  color: #fff;
+}

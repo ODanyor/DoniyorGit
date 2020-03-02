@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
-import { Context } from "../../context";
+import React from "react";
 import "./BurgerMenu.css";
 
-const BurgerMenu = () => {
-  const [data, setData] = useContext(Context);
+const BurgerMenu = ({ context }) => {
+  const [data, setData] = context;
   const toggle = () => {
     setData(prevState => ({
       ...prevState,

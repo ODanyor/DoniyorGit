@@ -1,11 +1,12 @@
 import React from "react";
 import "./About.css";
 
-const About = props => {
+const About = ({ left, right }) => {
+  let style = "about-container";
   return (
-    <div className="about-container">
-      {props.left}
-      {props.right}
+    <div className={style}>
+      {left}
+      {right}
     </div>
   );
 };

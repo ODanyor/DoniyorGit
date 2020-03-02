@@ -1,11 +1,15 @@
 import React from "react";
 import "./Project.css";
 
-const Project = props => {
+const Project = ({ mode, illustration, description }) => {
+  let style = "project-container";
+  if (mode) {
+    style = "project-container project-container-darkMode";
+  }
   return (
-    <div className="project-container">
-      {props.illustration}
-      {props.description}
+    <div className={style}>
+      {illustration}
+      {description}
     </div>
   );
 };

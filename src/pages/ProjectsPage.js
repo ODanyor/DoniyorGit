@@ -5,19 +5,20 @@ import Description from "../components/Project/Description";
 import { Page } from "../static/StyledComponents";
 import { storage } from "../storage";
 
-const Projects = ({ storage }) =>
+const Projects = ({ storage, mode }) =>
   storage.map((project, index) => (
     <Project
+      mode={mode}
       key={index}
       illustration={<Illustration img={project.img} link={project.liveLink} />}
       description={<Description description={project.description} />}
     />
   ));
 
-const ProjectsPage = () => {
+const ProjectsPage = ({ mode }) => {
   return (
     <Page>
-      <Projects storage={storage} />
+      <Projects mode={mode} storage={storage} />
     </Page>
   );
 };

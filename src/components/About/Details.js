@@ -1,16 +1,15 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React, { useState, useContext } from "react";
-import { Context } from "../../context";
+import React, { useState } from "react";
 import "./Details.css";
 const logo = require("../../static/Logo.svg");
 
-const Details = () => {
-  const [data] = useContext(Context);
+const Details = ({ context }) => {
+  const [data] = context;
   const { text } = data;
   // eslint-disable-next-line
   const [emojis, setEmojis] = useState({
     light: ["🖖", "👋", "✋", "✊", "✨", "🤙"],
-    dark: ["👹", "👺", "👾", "😈", "💀", "🤖", "🌚"]
+    dark: ["👹", "👺", "👾", "😈", "🤖", "🌚"]
   });
   let emojiStyle;
   if (data.darkMode) {
@@ -18,9 +17,13 @@ const Details = () => {
   } else {
     emojiStyle = emojis.light;
   }
+  let style = "details-container";
+  if (data.darkMode) {
+    style = "details-container details-container-darkMode";
+  }
   const randomEmoji = emojiStyle[Math.floor(Math.random() * emojiStyle.length)];
   return (
-    <div className="details-container">
+    <div className={style}>
       <div className="logo-container">
         <img alt="Logo" src={logo} />
       </div>

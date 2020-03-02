@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
-import { Context } from "../../context";
+import React from "react";
 import "./Mode.css";
 const r2d2 = require("../../static/images/r2d2.png");
 const vader = require("../../static/images/vader.png");
 
-const Mode = () => {
-  const [data, setData] = useContext(Context);
+const Mode = ({ context }) => {
+  const [data, setData] = context;
   let text = "Too light? Come to the dark side ...";
   if (data.darkMode) {
     text = "Come back to the light,young jedi...";

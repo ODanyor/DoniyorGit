@@ -8,6 +8,9 @@
 
   display: flex;
 }
+.project-container-darkMode {
+  color: #aaa;
+}
 .project-container:nth-child(odd) {
   flex-direction: row-reverse;
 }

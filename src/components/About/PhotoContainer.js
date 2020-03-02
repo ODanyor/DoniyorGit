@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
-import { Context } from "../../context";
+import React from "react";
 const Light = require("../../static/images/Light.jpg");
 const Dark = require("../../static/images/Dark.jpg");
 
-const PhotoContainer = () => {
-  const [data] = useContext(Context);
+const PhotoContainer = ({ context }) => {
+  const [data] = context;
   const { darkMode } = data;
   return (
     <div>

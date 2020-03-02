@@ -1,12 +1,12 @@
 import React from "react";
 import "./Menu.css";
 
-const Menu = props => {
+const Menu = ({ menu, links, background }) => {
   return (
     <div className="menu-container">
-      {props.menu}
-      {props.links}
-      {props.background}
+      {menu}
+      {links}
+      {background}
     </div>
   );
 };

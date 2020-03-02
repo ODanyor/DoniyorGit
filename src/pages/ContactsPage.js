@@ -1,11 +1,18 @@
 import React from "react";
 import Contacts from "../compositions/Contacts";
+import Links from "../components/Links/Links";
+import Form from "../components/Form/Form";
+import { Page } from "../static/StyledComponents";
 
-const ContactsPage = () => {
+const ContactsPage = ({ mode, sendContacts, client }) => {
   return (
-    <div>
-      <Contacts contacts="Contacts ..." form="Form" />
-    </div>
+    <Page>
+      <Contacts
+        mode={mode}
+        contacts={<Links />}
+        form={<Form sendContacts={sendContacts} client={client} />}
+      />
+    </Page>
   );
 };
 

@@ -1,0 +1,33 @@
+.fields-container {
+  padding: 15px;
+}
+.fields-container p {
+  margin: 10px;
+}
+.fields-container input {
+  width: 150px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #000;
+  font-weight: 900;
+  font-size: 11px;
+}
+.fields-container input::placeholder {
+  color: rgb(255, 50, 50);
+}
+.form-container button {
+  cursor: pointer;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Gochi Hand";
+  font-size: 27px;
+  border: 2px solid #000;
+  color: #000;
+  padding: 0 15px;
+  transition: all 0.4s ease;
+}
+.form-container button:hover {
+  background-color: #2a2a2a;
+  color: #aaa;
+  border: 2px solid #aaa;
+}

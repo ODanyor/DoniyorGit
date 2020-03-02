@@ -1,10 +1,15 @@
 import React from "react";
+import "./Contacts.css";
 
-const Contacts = props => {
+const Contacts = ({ mode, contacts, form }) => {
+  let style = "contacts-container";
+  if (mode) {
+    style = "contacts-container contacts-container-darkMode";
+  }
   return (
-    <div>
-      {props.contacts}
-      {props.form}
+    <div className={style}>
+      {contacts}
+      {form}
     </div>
   );
 };

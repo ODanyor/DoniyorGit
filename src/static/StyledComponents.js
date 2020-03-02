@@ -43,4 +43,5 @@ export const ThemeModeBackground = styled.div`
   height: 100%;
   background-color: ${props => props.color};
   z-index: -1000;
+  transition: all 0.4s ease;
 `;

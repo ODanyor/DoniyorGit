@@ -1,0 +1,35 @@
+.burger-container {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  margin: 15px;
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  z-index: 300;
+}
+.stick {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background: #2a2a2a;
+  transition: all 0.15s ease;
+}
+.stick-darkMode {
+  background: rgb(0, 150, 255);
+}
+.stick-1 {
+  position: relative;
+  transform: translateY(5.25px) rotate(45deg);
+}
+.stick-2 {
+  position: relative;
+  transform: translateY(-5.25px) rotate(-45deg);
+}

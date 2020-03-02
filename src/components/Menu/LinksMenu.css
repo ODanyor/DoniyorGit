@@ -1,0 +1,49 @@
+.background-container {
+  position: fixed;
+  width: 40%;
+  height: 100%;
+  background-color: yellow;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  transform: translateX(-100%);
+  transition: all 0.4s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 200;
+}
+@media screen and (max-width: 1000px) {
+  .background-container {
+    width: 100%;
+  }
+}
+.background-container-darkMode {
+  background-color: rgb(0, 15, 40);
+}
+.background-container-show {
+  animation: asd 0.4s alternate;
+  transform: translateX(-10%);
+}
+@keyframes asd {
+  0% {
+    transform: translateX(-100%);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+.nav-link {
+  cursor: pointer;
+  font-size: 25px;
+  color: #2a2a2a;
+}
+.handwrite-container {
+  text-decoration: underline;
+}
+.handwrite-contaiener-darkMode {
+  color: #aaa;
+}

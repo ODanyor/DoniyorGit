@@ -1,0 +1,22 @@
+.project-container {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 980px;
+  width: auto;
+
+  display: flex;
+}
+.project-container:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 800px) {
+  .project-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+  .project-container:nth-child(odd) {
+    flex-direction: column;
+  }
+}

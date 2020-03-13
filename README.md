@@ -16,6 +16,7 @@
 - Firebase Cloud Firestore
 - NodeJS(Express)
 
-![Screenshots:](./static/readme/screenshot.jpg)
+** Screenshots **
+<img alt="screenshot" src="./static/readme/screenshot.jpg" width="100%" height="auto" />
 
 ## [Live](https://doniyor-git.web.app/)

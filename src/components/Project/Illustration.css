@@ -1,3 +1,35 @@
 .illustration-container {
+  position: relative;
   width: 100%;
+  overflow: hidden;
+}
+
+.illustration-link {
+  display: flex;
+  justify-content: flex-end;
+  transform: translateX(45px);
+  transition: all 0.2s ease;
+}
+.illustration-link:hover {
+  transform: translateX(0);
+}
+.illustration-link-sub {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 45px;
+  border-radius: 25px 0 0 0;
+
+  display: flex;
+  align-items: center;
+}
+.illustration-link-sub img {
+  margin: 5px;
+  padding: 5px;
+}
+.illustration-link-sub p {
+  padding: 5px;
+  font-size: 19px;
+  color: #fff;
+  /* transform: rotate(-90deg); */
 }

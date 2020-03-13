@@ -3,7 +3,7 @@
 > My personal portfolio
 > Portfolio/Blog
 
-** Tech Stack **
+## Tech Stack \*\*
 
 - ReactJS
 - Redux
@@ -16,7 +16,8 @@
 - Firebase Cloud Firestore
 - NodeJS(Express)
 
-** Screenshots **
-<img alt="screenshot" src="./static/readme/screenshot.jpg" width="100%" height="auto" />
+## Screenshots
+
+![Screenshot of the project page](https://github.com/ODanyor/DoniyorGit/blob/master/src/static/readme/screenshot.jpg?raw=true)
 
 ## [Live](https://doniyor-git.web.app/)

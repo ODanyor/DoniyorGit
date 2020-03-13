@@ -15,7 +15,7 @@ const Links = () => {
           href="https://doniyorgit@gmail.com"
         >
           <img alt="logo" src={email} width="25px" height="25px" />
-          Email: <span>doniyorgit@gmail.com</span>
+          <span>doniyorgit@gmail.com</span>
         </a>
         <a
           target="_blank"

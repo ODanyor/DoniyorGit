@@ -3,7 +3,7 @@
 > My personal portfolio
 > Portfolio/Blog
 
-## Tech Stack \*\*
+## Tech Stack
 
 - ReactJS
 - Redux

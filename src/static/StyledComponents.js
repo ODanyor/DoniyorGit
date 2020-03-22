@@ -26,6 +26,7 @@ export const StyledBackground = styled.div`
 `;
 
 export const Page = styled.div`
+  padding-bottom: 70px;
   animation: appear 0.7s ease;
   @keyframes appear {
     from {

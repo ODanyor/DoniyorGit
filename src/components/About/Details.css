@@ -35,7 +35,7 @@
   width: 500px;
   line-height: 2rem;
   letter-spacing: 1.3px;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
 }
 @media screen and (max-width: 1000px) {
   .details-container p {

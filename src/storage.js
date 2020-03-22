@@ -1,9 +1,20 @@
-const lebonnet = require("./static/images/Lebonnet.jpg");
-const socialapp = require("./static/images/SocialApp.jpg");
-const gameguides = require("./static/images/GameGuides.jpg");
-const hackernews = require("./static/images/HackerNews.jpg");
+const lebonnet = require("./static/projects/Lebonnet.jpg");
+const socialapp = require("./static/projects/SocialApp.jpg");
+const gameguides = require("./static/projects/GameGuides.jpg");
+const hackernews = require("./static/projects/HackerNews.jpg");
+const moneytracker = require("./static/projects/MoneyTrackerApp.jpg");
 
 export const storage = [
+  {
+    img: moneytracker,
+    liveLink: "https://moneytrackerapp-0000.web.app/",
+    description: {
+      githubLink: "https://github.com/ODanyor/MoneyTrackerApp",
+      title: "Money Tracker App",
+      content:
+        "This application is tracking for your expenses and profits. According to the added transactions it will build the diagrams for the better data analyzing. To test this app, first you need to authenticate yourself. The application was built by React, Redux, Firebase. For detailed information, please, check github repository. (Warning! The app is not responsive yet)"
+    }
+  },
   {
     img: lebonnet,
     liveLink: "https://lebonnet-0000.firebaseapp.com",

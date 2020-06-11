@@ -1,7 +1,6 @@
 import React, { Suspense, lazy, useContext } from "react";
 import { Context } from "../../context";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import { Loading } from "../../static/StyledComponents";
 import axios from "axios";
 // Redux
@@ -30,11 +29,6 @@ function App({ sendContacts, client, messageToNull }) {
   return (
     <div className="App">
       <ThemeModeBackground color={darkMode ? "rgb(15, 40, 65)" : "#ffffff"} />
-      <Helmet>
-        <meta charSet="utf-8" />
-        <meta name="description" content="Dany's porfolio." />
-        <title>Dany</title>
-      </Helmet>
       <Router>
         <Menu
           menu={<BurgerMenu context={[data, setData]} />}
@@ -87,16 +81,16 @@ function App({ sendContacts, client, messageToNull }) {
 App.propTypes = {
   client: PropTypes.object.isRequired,
   sendContacts: PropTypes.func.isRequired,
-  messageToNull: PropTypes.func.isRequired
+  messageToNull: PropTypes.func.isRequired,
 };
 
-const mapDispatchToProps = dispatch => ({
-  sendContacts: data => dispatch(sendContacts(data)),
-  messageToNull: () => dispatch(messageToNull())
+const mapDispatchToProps = (dispatch) => ({
+  sendContacts: (data) => dispatch(sendContacts(data)),
+  messageToNull: () => dispatch(messageToNull()),
 });
 
-const mapStateToProps = state => ({
-  client: state.client
+const mapStateToProps = (state) => ({
+  client: state.client,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

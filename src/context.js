@@ -1,17 +1,17 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext } from 'react'
 
-export const Context = createContext();
+export const Context = createContext()
 
-export const Provider = props => {
+export const Provider = (props) => {
   const [data, setData] = useState({
     menu: false,
     darkMode: false,
     text:
-      "My name is Doniyor or you can call me Dany for short. I am fullstack web developer in Tashkent city, Uzbekistan. I am using React, Redux, Nodejs, Express, Next-js, Gatsby, Webpack and Python. For databases I prefer Firebase Cloud Firestore and MongoDB."
-  });
+      'My name is Doniyor. I am a fullstack software engineer. I am used to be sticked to my plans and trying to complete all given to me tasks on the time with clean, optimized code. I am not expansive, I just love to socialize. In my spare time I read, study for languages, watch social media and skate🏂. Please, check out my projects or my github. Take care and have a nice day',
+  })
   return (
     <Context.Provider value={[data, setData]}>
       {props.children}
     </Context.Provider>
-  );
-};
+  )
+}
